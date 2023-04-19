@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="cheeze.reset.css">
   <link rel="stylesheet" href="cheeze.styles.css">
-  <link rel="stylesheet" href="music.js">
+  
   <title>チーズ</title>
 </head>
 <body>
@@ -40,14 +40,18 @@
         <div class="content">
           <div class="comando">
             <p class="comando_p">たたかう</p>
-            <p class="comando_p">にげる</p>
-            <p class="comando_p">まほう</p>
-            <p class="comando_p">にげる</p>
+            <p id="code" class="comando_p">コーディング</p>
+            <p id="sleep" class="comando_p">ねる</p>
+            <p id="escape" class="comando_p">にげる</p>
           </div>
           <div class="text-box">
-            <p>ラスボスがあらわれた!</p>
+            <p id="target">ラスボスがあらわれた!</p>
           </div>         
         </div>
+
+        <!-- コマンド操作↓ -->
+        <script src="js/comando.js"></script>
+        
       </body>
       <!-- 音楽読み込み -->
       <audio controls autoplay loop src="./maou.mp3"></audio>
