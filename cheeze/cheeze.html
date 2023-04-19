@@ -12,10 +12,9 @@
 <body>
   <header class="level">
     <p>ジーズ生</p>
-    <p>レベル</p>
-    <p>HP</p>
-    <p>MP</p>
-    <p>ああああ</p>
+    <p>レベル 1</p>
+    <p>HP 10</p>
+    <p>睡眠 不足</p>
   </header>
     <div class="cheeze-container">
       <div class="cheeze-image">
@@ -39,7 +38,7 @@
       
         <div class="content">
           <div class="comando">
-            <p class="comando_p">たたかう</p>
+            <p id="attack" class="comando_p">たたかう</p>
             <p id="code" class="comando_p">コーディング</p>
             <p id="sleep" class="comando_p">ねる</p>
             <p id="escape" class="comando_p">にげる</p>
@@ -48,6 +47,26 @@
             <p id="target">ラスボスがあらわれた!</p>
           </div>         
         </div>
+
+        <!-- コマンド音↓ -->
+
+        <audio id="my-audio">
+          <source src="./js/「お相手しましょう」.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="my-audio2">
+          <source src="./js/「覚悟を…決めましょう」.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="my-audio3">
+          <source src="./js/「甘い！」.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="my-audio4">
+          <source src="./js/「もっと冷静になることです」.mp3" type="audio/mp3">
+        </audio>
+
+
 
         <!-- コマンド操作↓ -->
         <script src="js/comando.js"></script>
