@@ -2,27 +2,44 @@ body{
   background: url(./pipo-battlebg002b.jpg) no-repeat;
   background-size: cover;
   width:100%;
-   height: 100vh;
+   /* height: 50%; */
 } 
+
+.level{
+  background: #111;
+  box-shadow: 0px 0px 0px 8px #fff;
+  border-radius: 10px;
+  width:7%;
+  /* margin: 0 auto; */
+  padding: 0.5rem 3rem 1rem;
+  color: #fff;
+}
+
+
+
+.level p{
+  font-size: 15px;
+}
 .cheeze-container{
-  height: 50vh;
+  height: 30vh;
   margin-top: 10rem;
   position: relative;
 }
 .cheeze-image{
-width: 200px;
-height: 100px;
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-margin: auto;
-animation: bound 1.3s infinite;
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: bound 4s infinite;
 }
 
 .cheeze-image img{
   width: 100%;
+
 }
 
 @keyframes bound{
@@ -46,46 +63,77 @@ animation: bound 1.3s infinite;
 
 .shadow {
   position: absolute;
-  top: 0;
-  bottom: -240px;
-  left: 18px;
+  top: 0px;
+  bottom: 250px;
+  left: 0px;
   right: 0;
   margin: auto;
-  width: 190px;
-  height: 8px;
+  width: 150px;
+  height: 20px;
   background:#000; 
-  border-radius: 80%;
+  border-radius: 50%;
   filter: blur(8px);
-  opacity: 0.8;
-  animation: shadow-animation 1.3s infinite;
+  opacity: 0.7;
+  animation: shadow-animation 4s infinite;
 }
 
 @keyframes shadow-animation{
   0%,100%{
     transform: scale(1);
-    filter:blur(6px);
+    filter:blur(200px);
   }
   30%{
     transform: scale(1.4,1);
-    filter: blur(10px);
+    filter: blur(1px);
   }
+}
+
+.bottom{
+  align-items: flex-end;
+}
+.content{
+  display: flex;
+}
+.comando{
+  width:13%;
+  background: #111;
+  box-shadow: 0px 0px 0px 8px #fff;
+  border-radius: 10px;
+}
+.comando p{
+  color:#fff;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+}
+  /* 選択肢↓ */
+
+
+
+
+
+/* 選択肢↑ */
+.comando_p:hover{/*ホバーしたとき*/
+  background-color: #c5bebe;
+  border-radius: 10px;
 }
 
 .text-box {
   background: #111;
   box-shadow: 0px 0px 0px 8px #fff;
   border-radius: 10px;
-  width:500px;
-  margin: auto;
+  width:78%;
+  margin: 0 auto;
   padding: 0.5rem 3rem 3rem;
 }
 .text-box p{
   color:#fff;
   font-size: 20px;
-  width: 20ch;
+  width: 80ch;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 1.3s steps(15);
+  animation: typing 1.5s steps(30);
 }
 
 @keyframes typing{
